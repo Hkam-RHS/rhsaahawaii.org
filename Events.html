@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+
+<head>
   <style>
-  #emptySpace {
-    margin-bottom: 300px;
-  }
+    #emptySpace {
+      margin-bottom: 300px;
+    }
   </style>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
@@ -16,67 +18,90 @@
   <link href="materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
   <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection">
 </head>
+
 <body>
 
   <div class="navbar-fixed">
     <nav>
-    <div class="nav-wrapper red accent-4">
-      <a href="index.html" class="brand-logo hide-on-med-and-down left">
+      <div class="nav-wrapper red accent-4">
+        <a href="index.html" class="brand-logo hide-on-med-and-down left">
         <img src="sitepics/logo2.png" class="rhslogo">
       </a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><img src="sitepics/logo2.png" class="rhslogom"></a>
-      <ul id="nav-mobile" class="hide-on-med-and-down">
-        <li><a clq>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-        <li><a href="Donate.html">Support Us</a></li>
-        <li><a href="Board.html">Meet the Board</a></li>
-        <li><a href="Budget.html">Donations at Work</a></li>
-        <li><a href="Events.html">Events</a></li>
-        <li><a href="Hall.html">Hall of Fame</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Donate.html">Donate Here</a></li>
-        <li><a href="Board.html">Meet the Board</a></li>
-        <li><a href="Budget.html">Donations at Work</a></li>
-        <li><a href="Events.html">Events</a></li>
-        <li><a href="Hall.html">Hall of Fame</a></li>
-      </ul>
-    </div>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><img src="sitepics/logo2.png" class="rhslogom"></a>
+        <ul id="nav-mobile" class="hide-on-med-and-down">
+          <li><a clq>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+          <li><a href="Donate.html">Support Us</a></li>
+          <li><a href="Board.html">Meet the Board</a></li>
+          <li><a href="Budget.html">Donations at Work</a></li>
+          <li><a href="Events.html">Events</a></li>
+          <li><a href="Hall.html">Hall of Fame</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Donate.html">Donate Here</a></li>
+          <li><a href="Board.html">Meet the Board</a></li>
+          <li><a href="Budget.html">Donations at Work</a></li>
+          <li><a href="Events.html">Events</a></li>
+          <li><a href="Hall.html">Hall of Fame</a></li>
+        </ul>
+      </div>
     </nav>
-</div>
-<!--Begin Cards-->
-<div class="row padding">
-        <div class="col push-l3 l6 push-m2 m8 s12">
-          <div class="card">
-            <div class="card-image">
-              <img src="sitepics/pagoda.jpg">
-              <span class="card-title">RHS Alumni Ho'olaule'a</span>
-            </div>
-            <div class="card-content">
-              <p>SATURDAY. July 29th, 2017. Join us for a silent auction.</p>
-              <ul>
-                <li> 11:00am - Social</li>
-                <li> 12:00pm - Buffet Luncheon</li>
-                <li> 1:00 pm - Annual Membership Meeting Board Election & Program</li>
-              </ul>
-              <ul>
-                <li> Aloha Attire (Red & Gold Optional)</li>
-                <li> RSVP By: Monday July 17, 2017</li>
-              </ul>
-              <br>
-              <p>Questions? Call Sadie (808) 754-7083 or Email sadieoshiro@gmail.com</p>
-            </div>
-            <div class="card-action">
-              <a href="reservations.html">Click here for Reservations</a>
-            </div>
-          </div>
+  </div>
+  <!--Begin Cards-->
+  <div class="row padding">
+    <div class="col push-l3 l6 push-m2 m8 s12">
+      <div class="card grey lighten-4">
+        <div class="card-image">
+          <img src="sitepics/pagoda.jpg">
+          <span class="card-title">RHS Alumni Ho'olaule'a</span>
+        </div>
+        <div class="card-content">
+          <p>SATURDAY. July 29th, 2017. Join us for a silent auction.</p>
+          <ul>
+            <li> 11:00am - Social</li>
+            <li> 12:00pm - Buffet Luncheon</li>
+            <li> 1:00 pm - Annual Membership Meeting Board Election & Program</li>
+          </ul>
+          <ul>
+            <li> Aloha Attire (Red & Gold Optional)</li>
+            <li> RSVP By: Monday July 17, 2017</li>
+          </ul>
+          <br>
+          <p>Questions? Call Sadie (808) 754-7083 or Email sadieoshiro@gmail.com</p>
+        </div>
+        <div class="card-action">
+            <a href="reservations.html">Click here for Reservations</a>
+            <!--Enter paypal code after this-->
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="WUXDDNURBAF9Y">
+              <table>
+              <tr><td><input type="hidden" name="on0" value="Total guests">Total guests</td></tr><tr><td><select name="os0">
+              	<option value="Myself">Myself $45.00 USD</option>
+              	<option value="Myself + 1">Myself + 1 $90.00 USD</option>
+              	<option value="Myself + 2">Myself + 2 $135.00 USD</option>
+              	<option value="Myself + 3">Myself + 3 $180.00 USD</option>
+              </select> </td></tr>
+              <tr><td><input type="hidden" name="on1" value="Your name">Your name</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+              <tr><td><input type="hidden" name="on2" value="List guest names">List guest names.</td></tr><tr><td><input type="text" name="os2" maxlength="200"></td></tr>
+              <tr><td><input type="hidden" name="on3" value="Your phone number">Your phone number</td></tr><tr><td><input type="text" name="os3" maxlength="200"></td></tr>
+              </table>
+              <input type="hidden" name="currency_code" value="USD">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
         </div>
       </div>
-    </body>
-  <!--  Scripts-->
-  <script src="jquery-2.js"></script>
-  <script src="materialize.js"></script>
-  <script src="init.js"></script>
+    </div>
+  </div>
+</body>
+<!--  Scripts-->
+<script src="jquery-2.js"></script>
+<script src="materialize.js"></script>
+<script src="init.js"></script>
 
 
-<div class="hiddendiv common"></div></body></html>
+<div class="hiddendiv common"></div>
+</body>
+
+</html>
